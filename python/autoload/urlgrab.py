@@ -623,9 +623,9 @@ def init():
     if urlgrab_buffer:
         weechat.buffer_set(urlgrab_buffer, "type", "free")
         weechat.buffer_set(urlgrab_buffer, "key_bind_ctrl-R",        "/url **refresh")
-        weechat.buffer_set(urlgrab_buffer, "key_bind_meta2-A",       "/url **up")
-        weechat.buffer_set(urlgrab_buffer, "key_bind_meta2-B",       "/url **down")
-        weechat.buffer_set(urlgrab_buffer, "key_bind_meta-ctrl-J",   "/url **enter")
+        weechat.buffer_set(urlgrab_buffer, "key_bind_k",             "/url **up")
+        weechat.buffer_set(urlgrab_buffer, "key_bind_j",             "/url **down")
+        weechat.buffer_set(urlgrab_buffer, "key_bind_l",             "/url **enter")
         weechat.buffer_set(urlgrab_buffer, "key_bind_meta-ctrl-M",   "/url **enter")
         weechat.buffer_set(urlgrab_buffer, "key_bind_meta-meta2-1./~", "/url **scroll_top")
         weechat.buffer_set(urlgrab_buffer, "key_bind_meta-meta2-4~", "/url **scroll_bottom")
